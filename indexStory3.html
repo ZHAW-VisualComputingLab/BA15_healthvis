@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Infektionskrankheiten</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- Used on multiple sites -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/lineChart.css" rel="stylesheet">
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- script references -->
+    <script src="js/libraries/jquery.js"></script>
+    <script src="js/libraries/d3.min.js"></script>
+    <script src="js/libraries/queue.min.js"></script>
+    <script src="js/lineChart.js"></script>
+
+</head>
+
+<body>
+  
+    <div id="mainNav">
+    </div>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active" onclick="test()"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="container fill">
+            <div class="chart" id="site1"></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container fill">
+            <div class="chart" id="site2"></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container fill">
+            <div class="chart" id="site3"></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container fill">
+            <div class="chart" id="site4"></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container fill">
+            <div class="chart" id="site5"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div><!-- /.carousel -->
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" id="siteDescription">
+            </div>
+        </div>
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12" id="footerText">
+                    <p>Copyright &copy; ZHAW 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+    </div>
+    <!-- /.container -->
+    <script>
+      function carouselSiteUpdateTrigger(siteIndex){
+        stopVisualizationSite2();
+        stopVisualizationSite3();
+        stopVisualizationSite4();
+        switch(siteIndex+1) {
+          case 1:
+            $("#siteDescription").load("html/descriptions/story3/sitedescription1.html");
+            break;
+          case 2:
+            autostartVisualizationSite2();
+            $("#siteDescription").load("html/descriptions/story3/sitedescription2.html");
+            break;
+          case 3:
+            autostartVisualizationSite3();
+            $("#siteDescription").load("html/descriptions/story3/sitedescription3.html");
+            break;
+          case 4:
+            autostartVisualizationSite4();
+            $("#siteDescription").load("html/descriptions/story3/sitedescription4.html");
+            break;
+          case 5:
+            $("#siteDescription").load("html/descriptions/story3/sitedescription5.html");
+            break;
+          default:
+            $("#siteDescription").html("Site Description");
+        }
+      }
+    </script>
+    <script src="js/libraries/bootstrap_for_story10_4_3_2_1.js"></script>
+    <script src="js/libraries/jquery-ui.js"></script>
+    <script>
+        $(function(){
+
+            $("#mainNav").load("html/nav.html"); 
+
+            $("#site1").load("html/story3/site1.html");
+            $("#site2").load("html/story3/site2.html");
+            $("#site3").load("html/story3/site3.html");
+            $("#site4").load("html/story3/site4.html");
+            $("#site5").load("html/story3/site5.html");
+
+            $('.carousel').carousel({
+                interval: false //Prevent auto slide
+            })
+        }); 
+    </script>
+</body>
+</html>

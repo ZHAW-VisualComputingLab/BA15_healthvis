@@ -1,0 +1,24 @@
+<h1>OpenData Volltextsuche mit CKAN</h1>
+<p class="text-left">Mit dieser Volltextsuche können Dokumente auf <a href="http://opendata.admin.ch" alt="Opendata Portal des Schweizer Bundes" target="_blank">opendata.admin.ch</a> gesucht werden</p>
+<!--Queryinput-->
+<div class="row">
+	<div class="col-lg-6">
+		<div class="input-group">
+			<label>Detailsuche </label>
+			<input type="checkbox" name="detailedSearch">
+		</div>
+		<br>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Z.B. Gesundheit" id="fullTextSearchInput">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button" id="fullTextSearchButton">Suche</button>
+			</span>
+		</div><!-- /input-group -->
+	</div><!-- /.col-lg-6 -->
+</div><!-- /.row --><!--/Queryinput-->
+<!--Queryresults-->
+<br>
+<div id="queryResults">
+</div><!--/Queryresults-->
+<script src="js/fullTextSearch.js"></script>
+<script src="js/d3TagCloud.js"></script>

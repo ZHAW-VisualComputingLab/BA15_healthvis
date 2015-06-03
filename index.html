@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Web-basierte, interaktive Visualisierung von Gesundheitsdaten</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- script references -->
+    <script src="js/libraries/jquery.js"></script>
+    <script src="js/libraries/bootstrap.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+  
+    <div id="mainNav">
+    </div>
+
+
+      </div>    <!-- Full Page Image Background Carousel Header -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="container fill">
+            <div class="chart" id="site1">
+                <h1>Web-basierte, interaktive Visualisierung von Gesundheitsdaten</h1>
+                <p>Die Webseite ist auf die Auflösung "1920 x 1080" optimiert.</p>
+                <p>Viel Spass und Danke für den Besuch.</p> 
+                <br>
+                <h3>Verfügbare Visualisierungsthemen</h3>
+                <p>Mit einem Mausklick auf die folgenden Links gelangen Sie zu den einzelnen Geschichten.</p>
+                <a href="geschichteHerzDruckBMI.html">Herzinfarkt, hoher Blutdruck und BMI</a>
+                <br></br>
+                <a href="europeStory.html">Europäischer Vergleich von BIP und Lebenserwartung</a>
+                <br></br>
+                <a href="indexStory10.html">Kennzahlen Schweizer Spitäler</a>
+                <br></br>
+                <a href="indexStory4.html">Grippeentwicklung</a>
+                <br></br>
+                <a href="indexStory3.html">Zeitliche Entwicklung von Infektionskrankheiten</a>
+                <br></br>
+                <a href="indexStory2.html">Zeitliche Entwicklung der Lebenserwartung</a>
+                <br></br>
+                <a href="indexStory1.html">Zeitliche Entwicklung verschiedener Mortalitätsraten</a>
+                <br></br>
+                <h3>Volltextsuche mit CKAN</h3>
+                <p>Die Suche ist mit dem Portal <a href="http://opendata.admin.ch/">Open Data Schweiz</a> verbunden und bietet die Möglichkeit Dokumente, die auf Open Data zu Verfügung gestellt werden, zu suchen</p>
+                <a href="indexOpenDataSearch.html">Volltextsuche mit CKAN</a>
+            </div>
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+    
+
+
+    </div><!-- /.carousel -->
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12" id="siteDescription">
+
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12" id="footerText">
+                    <p>Copyright &copy; ZHAW 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+           interval: false //changes the speed
+        })
+    </script>   
+
+    <script>
+
+
+
+        $("#siteDescription").html("");
+       
+        /*
+        function updateFooter() {
+            var currentIndex = $('div.active').index() + 1;
+            console.log(currentIndex);
+        }*/
+    </script>
+    <script>
+            $(function(){
+
+
+                $("#mainNav").load("html/nav.html"); 
+
+
+
+
+            }); 
+    
+
+
+    </script>
+    
+
+
+
+</body>
+
+</html>

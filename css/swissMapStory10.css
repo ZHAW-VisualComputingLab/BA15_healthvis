@@ -1,0 +1,88 @@
+﻿        .canton {
+            stroke: #000;
+            stroke-linejoin: round;
+        }
+
+        .canton-boundary {
+            fill: none;
+            stroke: #000;
+            stroke-linejoin: round;
+        }
+        /* Formatierung der Kantonsgrenze */
+        .canton:hover {
+            stroke: #000;
+            stroke-width: 6px;
+            -webkit-svg-shadow: 2px 2px 7px #000;
+            cursor: pointer;
+        }
+
+        .languageRegion {
+            fill: none;
+            stroke: #000;
+            stroke-linejoin: round;
+        }
+
+        .languageRegion:hover {
+            stroke: #000;
+            stroke-width: 6px;
+            -webkit-svg-shadow: 2px 2px 7px #000;
+            cursor: pointer;
+        }
+
+
+        #swissMapVisualizationSite2 text, #swissMapVisualizationSite4 text, #swissMapVisualizationSite5 text, #swissMapVisualizationSite6 text, #swissMapVisualizationSite7 text {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 10px;
+            text-anchor: middle;
+        }
+
+        p[id^="displayRelativeRangeSite"] {
+            margin-top: 10px;
+        }
+
+
+        #pieChartViewSite2, #pieChartViewSite4, #pieChartViewSite5, #pieChartViewSite6 {
+            margin-left: -80px;
+        }
+
+
+        /* Pie Chart */
+        .arc path {
+            stroke: #fff;
+        }
+
+
+        /* Bar Chart */
+        .axis text {
+          font: 14px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: #000;
+          shape-rendering: crispEdges;
+        }
+
+        .bar {
+          fill: steelblue;
+          fill-opacity: .9;
+        }
+
+        .x.axis path {
+          display: none;
+        }
+
+        label {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
+        .noselect {
+          pointer-events : none;
+        }
+
+        .cursorHelp {
+            cursor: help;
+        }

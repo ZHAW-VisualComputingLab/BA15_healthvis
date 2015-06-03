@@ -1,0 +1,68 @@
+#streamgraphVisualization:before{
+    content: ">>";
+    position: absolute;
+    left: -3em;
+    opacity: 0;
+    bottom: 0;
+    font-size: 3em;
+    transition: all 0.5s;
+}
+#streamgraphVisualization:hover:before{
+    left: -1.5em;
+    opacity: 1;
+}
+
+#streamgraphVisualization:hover{
+    cursor: pointer;
+}
+
+#streamgraphVisualization .Line1 {
+    stroke:#2850AD;
+    fill:#2850AD;
+    background-color:#2850AD;
+}
+#streamgraphVisualization .Line2 {
+    stroke:#FF6319;
+    fill:#FF6319;
+    background-color:#FF6319;
+}
+#streamgraphVisualization .Line3 {
+    stroke:#6CBE45;
+    fill:#6CBE45;
+    background-color:#6CBE45;
+}
+#streamgraphVisualization .Line4 {
+    stroke:#996633;
+    fill:#996633;
+    background-color:#996633;
+}
+#streamgraphVisualization .Line5 {
+    stroke:#A7A9AC;
+    fill:#A7A9AC;
+    background-color:#A7A9AC;
+}
+#streamgraphVisualization .Line6 {
+    stroke:#FCCC0A;
+    fill:#FCCC0A;
+    background-color:#FCCC0A;
+}
+#streamgraphVisualization .Line7 {
+    stroke:#808183;
+    fill:#808183;
+    background-color:#808183;
+}
+#streamgraphVisualization .Line8 {
+    stroke:#EE352E;
+    fill:#EE352E;
+    background-color:#EE352E;
+}
+#streamgraphVisualization .Line9 {
+    stroke:#00933C; 
+    fill:#00933C;
+    background-color:#00933C;
+}
+#streamgraphVisualization .Line0 {
+    stroke:#B933AD;
+    fill:#B933AD;
+    background-color:#B933AD;
+}

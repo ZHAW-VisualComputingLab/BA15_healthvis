@@ -1,0 +1,5 @@
+Header	Name	Description
+Leistungen und Behandlungen	BettenStatA	Betten Akutbehandlung (stationär)
+Leistungen und Behandlungen	BettenStatP	Betten Psychiatrie (stationär)
+Leistungen und Behandlungen	BettenStatR	Betten Rehabilitation / Geriatrie (stationär)
+Leistungen und Behandlungen	BettenStatB	Betten Geburtshäuser (stationär)

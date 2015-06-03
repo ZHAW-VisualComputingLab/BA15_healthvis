@@ -1,0 +1,89 @@
+Header	Name	Description
+Leistungen und Behandlungen	PtageStatA	Anzahl Pflegetage Akutbehandlung (stationär, ohne Austrittstag) 
+Leistungen und Behandlungen	PtageStatP	Anzahl Pflegetage Psychiatrie (stationär, ohne Austrittstag) 
+Leistungen und Behandlungen	PtageStatR	Anzahl Pflegetage Rehabilitation / Geriatrie (stationär, ohne Austrittstag) 
+Leistungen und Behandlungen	PtageStatB	Anzahl Pflegetage Geburtshäuser (stationär, ohne Austrittstag) 
+Leistungen und Behandlungen	AustStatA	Austritte während des Jahres Akutbehandlung (stationär)
+Leistungen und Behandlungen	AustStatP	Austritte während des Jahres Psychiatrie (stationär)
+Leistungen und Behandlungen	AustStatR	Austritte während des Jahres Rehabilitation / Geriatrie (stationär)
+Leistungen und Behandlungen	AustStatB	Austritte während des Jahres Geburtshäuser (stationär)
+Leistungen und Behandlungen	BettenStatA	Betten Akutbehandlung (stationär)
+Leistungen und Behandlungen	BettenStatP	Betten Psychiatrie (stationär)
+Leistungen und Behandlungen	BettenStatR	Betten Rehabilitation / Geriatrie (stationär)
+Leistungen und Behandlungen	BettenStatB	Betten Geburtshäuser (stationär)
+Leistungen und Behandlungen	DADStatA	Durchschnittliche Aufenthaltsdauer Akutbehandlung (Tage, stationär)
+Leistungen und Behandlungen	DADStatP	Durchschnittliche Aufenthaltsdauer Psychiatrie (Tage, stationär)
+Leistungen und Behandlungen	DADStatR	Durchschnittliche Aufenthaltsdauer Rehabilitation / Geriatrie (Tage, stationär)
+Leistungen und Behandlungen	DADStatB	Durchschnittliche Aufenthaltsdauer Geburtshäuser (Tage, stationär)
+Leistungen und Behandlungen	pBettenBelStatA	Belegungsgrad der Betten Akutbehandlung (%, stationär)
+Leistungen und Behandlungen	pBettenBelStatP	Belegungsgrad der Betten Psychiatrie (%, stationär)
+Leistungen und Behandlungen	pBettenBelStatR	Belegungsgrad der Betten Rehabilitation / Geriatrie (%, stationär)
+Leistungen und Behandlungen	pBettenBelStatB	Belegungsgrad der Betten Geburtshäuser (%, stationär)
+Finanz­ und Betriebsdaten ambulant	KostAmbA	Gesamtkosten ambulant Akutbehandlung
+Finanz­ und Betriebsdaten ambulant	KostAmbP	Gesamtkosten ambulant Psychiatrie
+Finanz­ und Betriebsdaten ambulant	KostAmbR	Gesamtkosten ambulant Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten ambulant	KostAmbB	Gesamtkosten ambulant Geburtshäuser
+Finanz­ und Betriebsdaten ambulant	KostOKPAmbA	Von Gesamtkosten ambulant zulasten OKP Akutbehandlung
+Finanz­ und Betriebsdaten ambulant	KostOKPAmbP	Von Gesamtkosten ambulant zulasten OKP Psychiatrie
+Finanz­ und Betriebsdaten ambulant	KostOKPAmbR	Von Gesamtkosten ambulant zulasten OKP Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten ambulant	KostOKPAmbB	Von Gesamtkosten ambulant zulasten OKP Geburtshäuser
+Finanz­ und Betriebsdaten stationär	KostStatA	Gesamtkosten stationär Akutbehandlung
+Finanz­ und Betriebsdaten stationär	KostStatP	Gesamtkosten stationär Psychiatrie
+Finanz­ und Betriebsdaten stationär	KostStatR	Gesamtkosten stationär Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten stationär	KostStatB	Gesamtkosten stationär Geburtshäuser
+Finanz­ und Betriebsdaten stationär	KostKVGStatA	Von Gesamtkosten stationär Kosten zulasten OKP, nur Grundversicherte KVG Akutbehandlung
+Finanz­ und Betriebsdaten stationär	KostKVGStatP	Von Gesamtkosten stationär Kosten zulasten OKP, nur Grundversicherte KVG Psychiatrie
+Finanz­ und Betriebsdaten stationär	KostKVGStatR	Von Gesamtkosten stationär Kosten zulasten OKP, nur Grundversicherte KVG Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten stationär	KostKVGStatB	Von Gesamtkosten stationär Kosten zulasten OKP, nur Grundversicherte KVG Geburtshäuser
+Finanz­ und Betriebsdaten stationär	AnlKVGStatA	Von Gesamtkosten stationär Anlagenutzungskosten Akutbehandlung
+Finanz­ und Betriebsdaten stationär	AnlKVGStatP	Von Gesamtkosten stationär Anlagenutzungskosten Psychiatrie
+Finanz­ und Betriebsdaten stationär	AnlKVGStatR	Von Gesamtkosten stationär Anlagenutzungskosten Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten stationär	AnlKVGStatB	Von Gesamtkosten stationär Anlagenutzungskosten Geburtshäuser
+Finanz­ und Betriebsdaten stationär	KostZvOKPStatA	Von Gesamtkosten stationär Kosten zulasten OKP, Zusatzversicherte Akutbehandlung
+Finanz­ und Betriebsdaten stationär	KostZvOKPStatP	Von Gesamtkosten stationär Kosten zulasten OKP, Zusatzversicherte Psychiatrie
+Finanz­ und Betriebsdaten stationär	KostZvOKPStatR	Von Gesamtkosten stationär Kosten zulasten OKP, Zusatzversicherte Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten stationär	KostZvOKPStatB	Von Gesamtkosten stationär Kosten zulasten OKP, Zusatzversicherte Geburtshäuser
+Finanz­ und Betriebsdaten stationär	AnlZvOKPStatA	Von Gesamtkosten stationär Anlagenutzungskosten Akutbehandlung
+Finanz­ und Betriebsdaten stationär	AnlZvOKPStatP	Von Gesamtkosten stationär Anlagenutzungskosten Psychiatrie
+Finanz­ und Betriebsdaten stationär	AnlZvOKPStatR	Von Gesamtkosten stationär Anlagenutzungskosten Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten stationär	AnlZvOKPStatB	Von Gesamtkosten stationär Anlagenutzungskosten Geburtshäuser
+Finanz­ und Betriebsdaten	KostLangA	Gesamtkosten Langzeitpflege Akutbehandlung
+Finanz­ und Betriebsdaten	KostLangP	Gesamtkosten Langzeitpflege Psychiatrie
+Finanz­ und Betriebsdaten	KostLangR	Gesamtkosten Langzeitpflege Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten	KostLangB	Gesamtkosten Langzeitpflege Geburtshäuser
+Finanz­ und Betriebsdaten	AuftragLFA	Auftrag Lehre und Forschung Akutbehandlung
+Finanz­ und Betriebsdaten	AuftragLFP	Auftrag Lehre und Forschung Psychiatrie
+Finanz­ und Betriebsdaten	AuftragLFR	Auftrag Lehre und Forschung Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten	AuftragLFB	Auftrag Lehre und Forschung Geburtshäuser
+Finanz­ und Betriebsdaten Gesamterlös	ErlAmbA	Gesamterlös ambulant Akutbehandlung
+Finanz­ und Betriebsdaten Gesamterlös	ErlAmbP	Gesamterlös ambulant Psychiatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlAmbR	Gesamterlös ambulant Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlAmbB	Gesamterlös ambulant Geburtshäuser
+Finanz­ und Betriebsdaten Gesamterlös	ErlOKPAmbA	Von Gesamterlös ambulant Erlös OKP Akutbehandlung
+Finanz­ und Betriebsdaten Gesamterlös	ErlOKPAmbP	Von Gesamterlös ambulant Erlös OKP Psychiatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlOKPAmbR	Von Gesamterlös ambulant Erlös OKP Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlOKPAmbB	Von Gesamterlös ambulant Erlös OKP Geburtshäuser
+Finanz­ und Betriebsdaten Gesamterlös	ErlStatA	Gesamterlös stationär Akutbehandlung
+Finanz­ und Betriebsdaten Gesamterlös	ErlStatP	Gesamterlös stationär Psychiatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlStatR	Gesamterlös stationär Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlStatB	Gesamterlös stationär Geburtshäuser
+Finanz­ und Betriebsdaten Gesamterlös	ErlKVGStatA	Von Gesamterlös stationär Erlös OKP, nur Grundversicherte KVG Akutbehandlung
+Finanz­ und Betriebsdaten Gesamterlös	ErlKVGStatP	Von Gesamterlös stationär Erlös OKP, nur Grundversicherte KVG Psychiatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlKVGStatR	Von Gesamterlös stationär Erlös OKP, nur Grundversicherte KVG Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlKVGStatB	Von Gesamterlös stationär Erlös OKP, nur Grundversicherte KVG Geburtshäuser
+Finanz­ und Betriebsdaten Gesamterlös	ErlKVGStatVA	 Von Gesamterlös stationär Anteil Versicherer (%) Akutbehandlung
+Finanz­ und Betriebsdaten Gesamterlös	ErlKVGStatVP	 Von Gesamterlös stationär Anteil Versicherer (%) Psychiatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlKVGStatVR	 Von Gesamterlös stationär Anteil Versicherer (%) Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlKVGStatVB	 Von Gesamterlös stationär Anteil Versicherer (%) Geburtshäuser
+Finanz­ und Betriebsdaten Gesamterlös	ErlZvOKPStatA	Von Gesamterlös stationär Erlös OKP, Zusatzversicherte Akutbehandlung
+Finanz­ und Betriebsdaten Gesamterlös	ErlZvOKPStatP	Von Gesamterlös stationär Erlös OKP, Zusatzversicherte Psychiatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlZvOKPStatR	Von Gesamterlös stationär Erlös OKP, Zusatzversicherte Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlZvOKPStatB	Von Gesamterlös stationär Erlös OKP, Zusatzversicherte Geburtshäuser
+Finanz­ und Betriebsdaten Gesamterlös	ErlZvOKPStatVA	Von Gesamterlös stationär Anteil Versicherer (%) Akutbehandlung
+Finanz­ und Betriebsdaten Gesamterlös	ErlZvOKPStatVP	Von Gesamterlös stationär Anteil Versicherer (%) Psychiatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlZvOKPStatVR	Von Gesamterlös stationär Anteil Versicherer (%) Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlZvOKPStatVB	Von Gesamterlös stationär Anteil Versicherer (%) Geburtshäuser
+Finanz­ und Betriebsdaten Gesamterlös	ErlLangA	Gesamterlös Langzeitpflege Akutbehandlung
+Finanz­ und Betriebsdaten Gesamterlös	ErlLangP	Gesamterlös Langzeitpflege Psychiatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlLangR	Gesamterlös Langzeitpflege Rehabilitation / Geriatrie
+Finanz­ und Betriebsdaten Gesamterlös	ErlLangB	Gesamterlös Langzeitpflege Geburtshäuser

@@ -1,0 +1,129 @@
+#site1 .key_square, #site2 .key_square, #site3 .key_square, #site4 .key_square, #site5 .key_square, #site6 .key_square, #site7 .key_square{
+    height:10px;
+    width:10px;
+    outline:solid 1px black;
+    float:left;
+    margin-right:10px;
+    margin-top:6px;
+    margin-left:10px;
+}
+
+div.key div div.key_label:after, div.key div div.key_label:after{
+    content: "<<";
+    position: relative;
+    opacity: 0;
+    right: -20px;
+    transition: all 0.5s;
+}
+div.key div:hover div.key_label:after{
+    opacity: 1;
+    right: 0px;
+}
+div.key div:hover div.key_label{
+    font-weight: bold;
+    cursor: pointer;
+}
+/*.key_square:hover , .key_label{
+    cursor:help;
+}*/
+#site1 path, #site2 path, #site3 path, #site4 path, #site5 path, #site6 path, #site7 path{
+    fill: none;
+}
+#site1 .axis path, #site1 line, #site2 .axis path, #site2 line, #site3 .axis path, #site3 line, #site4 .axis path, #site4 line, #site5 .axis path, #site5 line, #site6 .axis path, #site6 line, #site7 .axis path, #site7 line{
+    stroke:black;
+}
+
+.Line1 {
+    stroke:#2850AD;
+    fill:#2850AD;
+    background-color:#2850AD;
+}
+.Line2 {
+    stroke:#FF6319;
+    fill:#FF6319;
+    background-color:#FF6319;
+}
+.Line3 {
+    stroke:#6CBE45;
+    fill:#6CBE45;
+    background-color:#6CBE45;
+}
+.Line4 {
+    stroke:#996633;
+    fill:#996633;
+    background-color:#996633;
+}
+.Line5 {
+    stroke:#A7A9AC;
+    fill:#A7A9AC;
+    background-color:#A7A9AC;
+}
+.Line6 {
+    stroke:#FCCC0A;
+    fill:#FCCC0A;
+    background-color:#FCCC0A;
+}
+.Line7 {
+    stroke:#808183;
+    fill:#808183;
+    background-color:#808183;
+}
+.Line8 {
+    stroke:#EE352E;
+    fill:#EE352E;
+    background-color:#EE352E;
+}
+.Line9 {
+    stroke:#00933C;
+    fill:#00933C;
+    background-color:#00933C;
+}
+.Line0 {
+    stroke:#B933AD;
+    fill:#B933AD;
+    background-color:#B933AD;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 110px;
+    height: 32px;
+    padding: 0 8px;
+    background: #ddd;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.tooltip:after {
+    top: 33px;
+    right: 56px;
+    width: 0;
+    display: block;
+    content: "";
+    position: absolute;
+    border-width: 8px 4px 0;
+    border-style: solid;
+    border-color: #aaa transparent;
+}
+
+.marker-bg, .marker path {
+  fill: #fc9272;
+  stroke: #de2d26;
+  stroke-width: 3;
+}
+
+.marker path {
+  fill: none;
+}
+
+.marker text {
+  fill: #fff;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.cursorHelp {
+  cursor: help;
+}

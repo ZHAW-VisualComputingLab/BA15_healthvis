@@ -1,0 +1,30 @@
+Header	Name	Description
+Leistungen und Behandlungen	PtageStatT	Anzahl Pflegetage (stationär, ohne Austrittstag)
+Leistungen und Behandlungen	AustStatT	Austritte während des Jahres (stationär)
+Leistungen und Behandlungen	NeugStatT	Anzahl gesunde Neugeborene (stationäre Behandlung)
+Leistungen und Behandlungen	Ops	Anzahl Operationssäle
+Leistungen und Behandlungen	Gebs	Anzahl Gebärsäle
+Leistungen und Behandlungen	CMIb	Casemix Index (CMI) brutto
+Leistungen und Behandlungen	CMIn	Casemix Index (CMI) netto
+Leistungen und Behandlungen	pPatWAU	Anteil ausländische Patienten (%, stationär)
+Leistungen und Behandlungen	pPatWAK	Anteil ausserkantonale Patienten (%, stationär)
+Leistungen und Behandlungen	pPatLKP	Anteil Patienten halbprivat oder privat (%, stationär)
+Leistungen und Behandlungen	pPatHOK	Anteil Patienten mit obligatorischer KV als Hauptgarant (%, stationär) 
+Personal	PersA	Ärzte
+Personal	PersP	Pflegepersonal
+Personal	PersMT	Übriges medizinisches Personal
+Personal	PersT	Gesamtes Personal
+Personal	PersAFall	Ärzte pro 100 Austritte
+Personal	PersPFall	Pflegepersonal pro 100 Austritte
+Personal	PersMTFall	Übriges medizinisches Personal pro 100 Austritte
+Personal	PersTFall	Gesamtes Personal pro 100 Austritte
+Personal	AnzBelA	Belegärzte
+Personal	AnzBelP	Übriges Belegpersonal
+Finanz­ und Betriebsdaten	AwBesold	Personalaufwand
+Finanz­ und Betriebsdaten	AwInvest	Investitionsaufwand
+Finanz­ und Betriebsdaten	AwSonst	Übriger Betriebsaufwand
+Finanz­ und Betriebsdaten	AwT	Total Aufwand
+Finanz­ und Betriebsdaten	EtMedL	Ertrag aus medizinischen Leistungen und Pflege
+Finanz­ und Betriebsdaten	EtSonst	Übriger Betriebsertrag
+Finanz­ und Betriebsdaten	EtSubv	Beiträge, Subventionen, Defizitdeckung
+Finanz­ und Betriebsdaten	FiErg	Betriebsergebnis

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>OpenData Volltextsuche durch CKAN</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+    <!-- Used on multiple sites -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- script references -->
+    <script src="js/libraries/d3.min.js"></script>
+    <script src="js/libraries/d3.layout.cloud.js"></script>
+    <script src="js/libraries/jquery.js"></script>
+    <script src="js/libraries/bootstrap.min.js"></script>
+    <script src="js/libraries/bootstrap-switch.js"></script>
+    <script src="js/libraries/jquery-ui.js"></script>
+    <script src="js/libraries/underscore-min.js"></script>
+    <script src="js/libraries/ckan.js"></script>
+
+</head>
+
+<body>
+
+    <div id="mainNav">
+    </div>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <div id="myCarousel" class=" slide" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="container fill">
+            <div class="chart" id="site1"></div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.carousel -->
+
+    <!-- Page Content -->
+    <div class="container">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12" id="footerText">
+                    <p>Copyright &copy; ZHAW 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+           interval: false //changes the speed
+        })
+
+        $(function(){
+            $("#mainNav").load("html/nav.html"); 
+            $("#site1").load("html/OpenDataSearch/site1.html");
+
+        }); 
+    
+    </script>
+
+</body>
+</html>
