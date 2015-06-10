@@ -64,13 +64,7 @@ function dataProcessingSite7(){
     viualizationSite7Options.lineChart.setMenuData(viualizationSite7Options.loadedFile);
 
     // Set dataheadername
-    if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
-        viualizationSite7Options.lineChart.setDataHeaderName(d3.entries(viualizationSite7Options.loadedFile[0])[d3.entries(viualizationSite7Options.loadedFile[0]).length-1].key);
-    }else if((navigator.userAgent.toLowerCase().indexOf('safari') > -1) || (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)){
-        viualizationSite7Options.lineChart.setDataHeaderName(d3.entries(viualizationSite7Options.loadedFile[0])[0].key);
-    }else{
-        viualizationSite7Options.lineChart.setDataHeaderName(d3.entries(viualizationSite7Options.loadedFile[0])[d3.entries(viualizationSite7Options.loadedFile[0]).length-1].key);
-    }
+    viualizationSite7Options.lineChart.setDataHeaderName(d3.entries(viualizationSite7Options.loadedFile[0]).sort(sortYearsAscNameFirst)[0].key);
 
     // Convert Data to match Micha's golden Rule (Do not store data in the keys of a JSON blob.)
     var tempConvertedData;
@@ -86,13 +80,7 @@ function dataProcessingSite7(){
     var tempTimeLineName;
     var convertedTimeLineData = {};
     for(var k = 0; k<viualizationSite7Options.loadedFile.length; k++){
-        if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
-            tempTimeLineName = d3.entries(viualizationSite7Options.loadedFile[k])[d3.entries(viualizationSite7Options.loadedFile[k]).length-1].value;
-        }else if((navigator.userAgent.toLowerCase().indexOf('safari') > -1) || (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)){
-            tempTimeLineName = d3.entries(viualizationSite7Options.loadedFile[k])[0].value;
-        }else{
-            tempTimeLineName = d3.entries(viualizationSite7Options.loadedFile[k])[d3.entries(viualizationSite7Options.loadedFile[k]).length-1].value;
-        }
+        tempTimeLineName = d3.entries(viualizationSite7Options.loadedFile[k]).sort(sortYearsAscNameFirst)[0].value;
         tempConvertedData = d3.entries(viualizationSite7Options.loadedFile[k]);
 
         // Remove non-numeric data values
@@ -176,6 +164,18 @@ function loadDataSite7(){
                                                 $(this).simulateClick('click');
                                             })
     });
+}
+
+function sortYearsAscNameFirst(a,b) {
+  if((/^\d+$/.test("" + a.key))&&!(/^\d+$/.test("" + b.key)))
+    return 1;
+  if(!(/^\d+$/.test("" + a.key))&&(/^\d+$/.test("" + b.key)))
+    return -1;
+  if (+a.key < +b.key)
+    return -1;
+  if (+a.key > +b.key)
+    return 1;
+  return 0;
 }
 
 $('#visualizationSite7').ready(function(){

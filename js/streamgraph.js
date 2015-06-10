@@ -31,6 +31,7 @@ function streamGraph(CSSsiteId, options){
 
 		"use strict";
 
+		console.log(data)
 		data.splice(4,1);
 		data = data.reverse();
 
@@ -49,7 +50,7 @@ function streamGraph(CSSsiteId, options){
 			var parseDate = d3.time.format("%Y").parse
 
 	  	for(var i=0;i<data.length;i++){
-	  		convertedData = d3.entries(data[i]);
+	  		convertedData = d3.entries(data[i]).sort(sortYearsAscNameFirst);
 	  		groupName = {name: convertedData[0].value};
 			// Remove non-numeric data values
 			convertedData = convertedData.filter(function(el) {return el.value.length && el.value==+el.value;});
@@ -181,5 +182,17 @@ function streamGraph(CSSsiteId, options){
 	    }
 
 	}
+
+function sortYearsAscNameFirst(a,b) {
+  if((/^\d+$/.test("" + a.key))&&!(/^\d+$/.test("" + b.key)))
+    return 1;
+  if(!(/^\d+$/.test("" + a.key))&&(/^\d+$/.test("" + b.key)))
+    return -1;
+  if (+a.key < +b.key)
+    return -1;
+  if (+a.key > +b.key)
+    return 1;
+  return 0;
+}
 
 }

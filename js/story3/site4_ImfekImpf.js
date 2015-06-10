@@ -77,13 +77,7 @@ function dataProcessingSite4_ImfekImpf(){
     viualizationSite4_ImfekImpfOptions.lineChart.setMenuData(viualizationSite4_ImfekImpfOptions.loadedFile);
 
     // Set dataheadername
-    if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
-        viualizationSite4_ImfekImpfOptions.lineChart.setDataHeaderName(d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[0])[d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[0]).length-1].key);
-    }else if((navigator.userAgent.toLowerCase().indexOf('safari') > -1) || (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)){
-        viualizationSite4_ImfekImpfOptions.lineChart.setDataHeaderName(d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[0])[0].key);
-    }else{
-        viualizationSite4_ImfekImpfOptions.lineChart.setDataHeaderName(d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[0])[d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[0]).length-1].key);
-    }
+    viualizationSite4_ImfekImpfOptions.lineChart.setDataHeaderName(d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[0]).sort(sortYearsAscNameFirst)[0].key);
 
     // Convert Data to match Micha's golden Rule (Do not store data in the keys of a JSON blob.)
     var tempConvertedData;
@@ -99,13 +93,7 @@ function dataProcessingSite4_ImfekImpf(){
     var tempTimeLineName;
     var convertedTimeLineData = {};
     for(var k = 0; k<viualizationSite4_ImfekImpfOptions.loadedFile.length; k++){
-        if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
-            tempTimeLineName = d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[k])[d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[k]).length-1].value;
-        }else if((navigator.userAgent.toLowerCase().indexOf('safari') > -1) || (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)){
-            tempTimeLineName = d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[k])[0].value;
-        }else{
-            tempTimeLineName = d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[k])[d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[k]).length-1].value;
-        }
+        tempTimeLineName = d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[k]).sort(sortYearsAscNameFirst)[0].value;
         tempConvertedData = d3.entries(viualizationSite4_ImfekImpfOptions.loadedFile[k]);
         // Remove non-numeric data values
         convertedTimeLineData[tempTimeLineName] = tempConvertedData.filter(function(el) {return el.value.length && el.value==+el.value;});
@@ -250,6 +238,17 @@ function startVisualizationSite4_ImfekImpf(){
 
 }
 
+function sortYearsAscNameFirst(a,b) {
+  if((/^\d+$/.test("" + a.key))&&!(/^\d+$/.test("" + b.key)))
+    return 1;
+  if(!(/^\d+$/.test("" + a.key))&&(/^\d+$/.test("" + b.key)))
+    return -1;
+  if (+a.key < +b.key)
+    return -1;
+  if (+a.key > +b.key)
+    return 1;
+  return 0;
+}
 
 $('#visualizationSite4_ImfekImpf').ready(function(){
      loadDataSite4_ImfekImpf();

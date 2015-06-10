@@ -125,13 +125,7 @@ jQuery.fn.simulateClick = function() {
 
 function dataProcessingSite3(){
     // Set dataheadername
-    if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
-        viualizationSite3Options.dataHeaderName = d3.entries(viualizationSite3Options.loadedFile[0])[d3.entries(viualizationSite3Options.loadedFile[0]).length-1].key;
-    }else if((navigator.userAgent.toLowerCase().indexOf('safari') > -1) || (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)){
-        viualizationSite3Options.dataHeaderName = d3.entries(viualizationSite3Options.loadedFile[0])[0].key;
-    }else{
-        viualizationSite3Options.dataHeaderName = d3.entries(viualizationSite3Options.loadedFile[0])[d3.entries(viualizationSite3Options.loadedFile[0]).length-1].key;
-    }
+    viualizationSite3Options.dataHeaderName = d3.entries(viualizationSite3Options.loadedFile[0]).sort(sortYearsAscNameFirst)[0].key;
     viualizationSite3Options.lineChart.setDataHeaderName(viualizationSite3Options.dataHeaderName);
 
     // Set MenuData (loaded File)
@@ -156,13 +150,7 @@ function dataProcessingSite3(){
     // Convert timelinedata
     var tempTimeLineName;
     for(var k = 0; k<viualizationSite3Options.loadedFile.length; k++){
-        if(navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
-            tempTimeLineName = d3.entries(viualizationSite3Options.loadedFile[k])[d3.entries(viualizationSite3Options.loadedFile[k]).length-1].value;
-        }else if((navigator.userAgent.toLowerCase().indexOf('safari') > -1) || (navigator.userAgent.toLowerCase().indexOf('firefox') > -1)){
-            tempTimeLineName = d3.entries(viualizationSite3Options.loadedFile[k])[0].value;
-        }else{
-            tempTimeLineName = d3.entries(viualizationSite3Options.loadedFile[k])[d3.entries(viualizationSite3Options.loadedFile[k]).length-1].value;
-        }
+        tempTimeLineName = d3.entries(viualizationSite3Options.loadedFile[k]).sort(sortYearsAscNameFirst)[0].value;
         tempConvertedData = d3.entries(viualizationSite3Options.loadedFile[k]);
         // Remove non-numeric data values
         viualizationSite3Options.convertedTimeLineData[tempTimeLineName] = tempConvertedData.filter(function(el) {return el.value.length && el.value==+el.value;});
@@ -224,6 +212,18 @@ function loadDataSite3(){
         viualizationSite3Options.lineChart.initialDraw();
         jQuery('#site3 div.key_label').each(function(){$(this).simulateClick('click');});
     });
+}
+
+function sortYearsAscNameFirst(a,b) {
+  if((/^\d+$/.test("" + a.key))&&!(/^\d+$/.test("" + b.key)))
+    return 1;
+  if(!(/^\d+$/.test("" + a.key))&&(/^\d+$/.test("" + b.key)))
+    return -1;
+  if (+a.key < +b.key)
+    return -1;
+  if (+a.key > +b.key)
+    return 1;
+  return 0;
 }
 
 $('#visualizationSite3').ready(function(){
